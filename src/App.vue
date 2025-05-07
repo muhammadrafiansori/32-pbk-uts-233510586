@@ -211,4 +211,24 @@ button.toggle:hover {
   color: #6b7280;
   margin-top: 4px;
 }
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+button.delete {
+  background-color: #ef4444;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.delete:hover {
+  background-color: #b91c1c;
+}
 </style>
