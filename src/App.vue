@@ -47,11 +47,34 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
+import { ref, computed } from 'vue';
 
+export default {
+  setup() {
+    const tasks = ref([]);
+    const newTask = ref('');
+    const newStartTime = ref('');
+    const newEndTime = ref('');
+    const showCompleted = ref(false);
+
+    const addTask = () => {
+      if (newTask.value.trim() && newStartTime.value && newEndTime.value) {
+        tasks.value.push({
+          text: newTask.value.trim(),
+          completed: false,
+          startTime: newStartTime.value,
+          endTime: newEndTime.value
+        });
+        newTask.value = '';
+        newStartTime.value = '';
+        newEndTime.value = '';
+      }
+     }
+    }
+  };
 </script>
 
 <style>
