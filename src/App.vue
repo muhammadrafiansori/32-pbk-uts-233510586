@@ -138,4 +138,28 @@ input[type="text"],
   border-radius: 12px;
   background-color: #f9fafb;
 }
+input[type="text"]:focus,
+.time-input:focus {
+  border-color: #2563eb;
+  outline: none;
+  background-color: #fff;
+}
+
+button.add {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+button.add:hover {
+  background-color: #1e40af;
+}
 </style>
