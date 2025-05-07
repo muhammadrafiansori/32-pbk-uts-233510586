@@ -99,4 +99,10 @@ export default {
 </script>
 
 <style>
+body {
+  font-family: 'Quicksand', 'Segoe UI', 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
 </style>
