@@ -72,9 +72,30 @@ export default {
         newStartTime.value = '';
         newEndTime.value = '';
       }
-     }
-    }
-  };
+    };
+
+    const deleteTask = (index) => {
+      tasks.value.splice(index, 1);
+    };
+
+    const filteredTasks = computed(() => {
+      return showCompleted.value
+        ? tasks.value
+        : tasks.value.filter(task => !task.completed);
+    });
+
+    return {
+      tasks,
+      newTask,
+      newStartTime,
+      newEndTime,
+      addTask,
+      deleteTask,
+      showCompleted,
+      filteredTasks
+    };
+  }
+};
 </script>
 
 <style>
