@@ -105,4 +105,13 @@ body {
   color: #111827;
 }
 
+.container {
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
 </style>
