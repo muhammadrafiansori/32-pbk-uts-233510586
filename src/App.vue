@@ -26,7 +26,27 @@
         <span>Tambah</span>
       </button>
     </div>
+    <button @click="showCompleted = !showCompleted" class="toggle">
+      {{ showCompleted ? 'Hanya Belum Selesai' : 'Tampilkan Semua' }}
+    </button>
+
+    <div class="task-list">
+      <div
+        v-for="(task, index) in filteredTasks"
+        :key="index"
+        :class="['task', { completed: task.completed }]"
+      >
+        <input type="checkbox" v-model="task.completed" />
+        <div class="task-text" :class="{ completed: task.completed }">
+          {{ task.text }}
+          <div v-if="task.startTime && task.endTime" class="due-time">
+            🕒 {{ task.startTime }} - {{ task.endTime }}
+          </div>
+        </div>
+        <button @click="deleteTask(index)" class="delete">Hapus</button>
+      </div>
     </div>
+  </div>
 
 </template>
 
