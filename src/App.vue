@@ -114,4 +114,28 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
+h1 {
+  font-size: 2.5rem;
+  color: #2563eb;
+  font-weight: 900;
+  margin-bottom: 24px;
+  
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input[type="text"],
+.time-input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #f9fafb;
+}
 </style>
