@@ -176,4 +176,23 @@ button.toggle {
 button.toggle:hover {
   background-color: #374151;
 }
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 14px;
+  background-color: #f9fafb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.task.completed {
+  background-color: #e5e7eb;
+}
 </style>
