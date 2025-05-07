@@ -195,4 +195,20 @@ button.toggle:hover {
 .task.completed {
   background-color: #e5e7eb;
 }
+.task-text {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.due-time {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
 </style>
