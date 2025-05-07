@@ -162,4 +162,18 @@ button.add {
 button.add:hover {
   background-color: #1e40af;
 }
+button.toggle {
+  background-color: #6b7280;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+button.toggle:hover {
+  background-color: #374151;
+}
 </style>
